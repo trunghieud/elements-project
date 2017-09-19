@@ -14,7 +14,7 @@ public class Core
 
 	private BasicTest curTest;
 
-	private Logger log;
+	private Logger log = Logger.getLogger(this.getClass());
 
 	public Core(BasicTest test)
 	{
@@ -63,5 +63,10 @@ public class Core
 	public void setDriver(WebDriver driver)
 	{
 		this.driver = driver;
+	}
+
+	private Logger getLog()
+	{
+		return this.log;
 	}
 }

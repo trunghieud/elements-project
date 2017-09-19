@@ -1,4 +1,4 @@
-package com.sqa.td.helpers;
+package com.sqa.td.helpers.enums;
 
 public enum TextFormat
 {

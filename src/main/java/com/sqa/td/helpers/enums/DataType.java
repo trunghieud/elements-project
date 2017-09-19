@@ -3,7 +3,7 @@
  * Dam, Trung-Hieu<br>
  * Created: Sep 9, 2017
  */
-package com.sqa.td.helpers;
+package com.sqa.td.helpers.enums;
 
 /**
  * DataType //ADDD (description of class)
