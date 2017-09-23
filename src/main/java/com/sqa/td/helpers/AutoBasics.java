@@ -11,6 +11,33 @@ import org.openqa.selenium.*;
 public class AutoBasics
 {
 
+	public static List<WebElement> getByTagName(WebDriver driver, String tagName)
+	{
+		List<WebElement> element = driver.findElements(By.xpath(".//*[@id='content']"));
+		Iterator<WebElement> itr = element.iterator();
+		while (itr.hasNext())
+		{
+			System.out.println(itr.next().getText());
+		}
+		return element;
+	}
+
+	public static List<WebElement> getCSSPropBasedElements(WebDriver driver, By locator, String prop, String value)
+	{
+		return null;
+	}
+
+	public static List<WebElement> getPictures(WebDriver driver)
+	{
+		List<WebElement> element = driver.findElements(By.cssSelector("*[class='img']"));
+		Iterator<WebElement> itr = element.iterator();
+		while (itr.hasNext())
+		{
+			System.out.println(itr.next().getText());
+		}
+		return element;
+	}
+
 	public static String getProp(String propName, String fileLocation, String fileName, Logger logger)
 	{
 		Properties props = new Properties();  // declare a Properties type

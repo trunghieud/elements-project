@@ -45,6 +45,11 @@ public class Core
 		return this.driver;
 	}
 
+	public Logger getLog()
+	{
+		return this.log;
+	}
+
 	public String getProp(String propName)
 	{
 		return AutoBasics.getProp(propName, "src/main/resources/", "config.properties", getLog());
@@ -63,10 +68,5 @@ public class Core
 	public void setDriver(WebDriver driver)
 	{
 		this.driver = driver;
-	}
-
-	private Logger getLog()
-	{
-		return this.log;
 	}
 }

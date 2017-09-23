@@ -12,9 +12,6 @@ import com.sqa.td.helpers.exceptions.*;
 public class WSTest extends BasicChromeTest
 {
 
-	/**
-	 * @param baseUrl
-	 */
 	public WSTest()
 	{
 		super("http://williams-sonoma.com");
